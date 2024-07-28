@@ -1,1 +1,50 @@
-%5B%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%B5%E1%B1%A4%E1%B1%A7%22%2C%0A%20%20%20%20%22english%22%3A%20%22snake%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%A8%E1%B1%9A%E1%B1%B4%E1%B1%AE%22%2C%0A%20%20%20%20%22english%22%3A%20%22frog%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%A2%E1%B1%AE%E1%B1%A8%E1%B1%9A%E1%B1%A2%22%2C%0A%20%20%20%20%22english%22%3A%20%22goat%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%A1%E1%B1%9A%E1%B1%A2%E1%B1%9F%E1%B1%9C%22%2C%0A%20%20%20%20%22english%22%3A%20%22food%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%A5%E1%B1%AE%E1%B1%B8%E1%B1%AB%E1%B1%BD%E1%B1%A8%E1%B1%9F%22%2C%0A%20%20%20%20%22english%22%3A%20%22search%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%9F%E1%B1%A2%E1%B1%9F%E1%B1%9C%22%2C%0A%20%20%20%20%22english%22%3A%20%22your%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%A7%E1%B1%A9%E1%B1%9B%E1%B1%A9%E1%B1%A2%22%2C%0A%20%20%20%20%22english%22%3A%20%22name%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%AA%E1%B1%AE%E1%B1%AB%22%2C%0A%20%20%20%20%22english%22%3A%20%22what%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%AB%E1%B1%9A%22%2C%0A%20%20%20%20%22english%22%3A%20%22is%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%AB%E1%B1%9A%22%2C%0A%20%20%20%20%22english%22%3A%20%22are%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%9F%E1%B1%A1%22%2C%0A%20%20%20%20%22english%22%3A%20%22he%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22santali%22%3A%20%22%E1%B1%9F%E1%B1%A1%E1%B1%9F%E1%B1%9C%22%2C%0A%20%20%20%20%22english%22%3A%20%22his%22%0A%20%20%7D%0A%5D
+[
+  {
+    "santali": "ᱵᱤᱧ",
+    "english": "snake"
+  },
+  {
+    "santali": "ᱨᱚᱴᱮ",
+    "english": "frog"
+  },
+  {
+    "santali": "ᱢᱮᱨᱚᱢ",
+    "english": "goat"
+  },
+  {
+    "santali": "ᱡᱚᱢᱟᱜ",
+    "english": "food"
+  },
+  {
+    "santali": "ᱥᱮᱸᱫᱽᱨᱟ",
+    "english": "search"
+  },
+  {
+    "santali": "ᱟᱢᱟᱜ",
+    "english": "your"
+  },
+  {
+    "santali": "ᱧᱩᱛᱩᱢ",
+    "english": "name"
+  },
+  {
+    "santali": "ᱪᱮᱫ",
+    "english": "what"
+  },
+  {
+    "santali": "ᱫᱚ",
+    "english": "is"
+  },
+  {
+    "santali": "ᱫᱚ",
+    "english": "are"
+  },
+  {
+    "santali": "ᱟᱡ",
+    "english": "he"
+  },
+  {
+    "santali": "ᱟᱡᱟᱜ",
+    "english": "his"
+  }
+]
