@@ -49,7 +49,7 @@
   },
   {
     "santali": "ᱤᱧ",
-    "english": "I"
+    "english": "i"
   },
   {
     "santali": "ᱤᱧᱟᱜ",
@@ -58,5 +58,9 @@
   {
     "santali": "ᱟᱢ",
     "english": "you"
+  },
+  {
+    "santali": "ᱟᱵᱚ",
+    "english": "we"
   }
 ]
