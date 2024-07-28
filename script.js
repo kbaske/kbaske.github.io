@@ -2,27 +2,44 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('searchInput');
   const dictionaryDiv = document.getElementById('dictionary');
   const modal = document.getElementById('modal');
-  const modalWord = document.getElementById('modalWord');
-  const modalDefinition = document.getElementById('modalDefinition');
+  const modalSantali = document.getElementById('modalSantali');
+  const modalEnglish = document.getElementById('modalEnglish');
   const closeModal = document.getElementsByClassName('close')[0];
 
-  fetch('https://raw.githubusercontent.com/kbaske/kbaske.github.io/main/data/sat-en.json') // Update with your raw JSON URL
-    .then(response => response.json())
-    .then(data => {
-      const dictionary = data.slice(0, 7); // Only show the first 7 words
-      displayDictionary(dictionary);
+  const fetchData = async () => {
+    try {
+      const response = await fetch('https://raw.githubusercontent.com/kbaske/kbaske.github.io/main/data/sat-en.json'); // Update with your raw JSON URL
+      const data = await response.json();
+      adjustDisplay(data);
 
       searchInput.addEventListener('input', () => {
         const query = searchInput.value.toLowerCase();
         const filteredDictionary = data.filter(entry =>
           entry.santali.toLowerCase().includes(query) || entry.english.toLowerCase().includes(query)
-        ).slice(0, 7); // Limit to 7 results
-        displayDictionary(filteredDictionary);
+        );
+        adjustDisplay(filteredDictionary);
       });
-    })
-    .catch(error => console.error('Error fetching the dictionary data:', error));
 
-  function displayDictionary(dictionary) {
+      window.addEventListener('resize', () => adjustDisplay(data));
+    } catch (error) {
+      console.error('Error fetching the dictionary data:', error);
+    }
+  };
+
+  const adjustDisplay = (data) => {
+    const displayCount = getDisplayCount();
+    const dictionary = data.slice(0, displayCount);
+    displayDictionary(dictionary);
+  };
+
+  const getDisplayCount = () => {
+    const width = window.innerWidth;
+    if (width < 600) return 5;
+    if (width < 900) return 10;
+    return 15;
+  };
+
+  const displayDictionary = (dictionary) => {
     dictionaryDiv.innerHTML = '';
     dictionary.forEach(entry => {
       const entryDiv = document.createElement('div');
@@ -43,12 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
       dictionaryDiv.appendChild(entryDiv);
 
       entryDiv.addEventListener('click', () => {
-        modalWord.textContent = entry.santali;
-        modalDefinition.textContent = entry.english;
+        modalSantali.textContent = entry.santali;
+        modalEnglish.textContent = entry.english;
         modal.style.display = 'block';
       });
     });
-  }
+  };
 
   closeModal.onclick = function() {
     modal.style.display = 'none';
@@ -59,4 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.style.display = 'none';
     }
   };
+
+  fetchData();
 });
