@@ -67,7 +67,7 @@ main {
 }
 
 .santali {
-  font-weight: bold;
+  font-weight: 550;
   font-size: 1.2rem;
 }
 
@@ -143,4 +143,12 @@ footer {
 .highlighted-text {
   font-weight: 500;
   color: hotpink;
+}
+
+.no-results {
+  text-align: center;
+}
+
+.no-results h1 {
+  color: #008cff;
 }

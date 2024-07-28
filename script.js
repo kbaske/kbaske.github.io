@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function showNoResultsMessage() {
     dictionaryDiv.innerHTML = `
       <div class="no-results">
+      <h1>ᱦᱮᱴᱨᱮᱻ...</h1> </br>
         <span class="highlighted-text">ᱱᱚᱶᱟ ᱟᱹᱲᱟᱹ</span> ᱫᱚ <span class="highlighted-text">ᱟᱹᱲᱟᱹ ᱠᱷᱟᱫᱟᱱᱨᱮ ᱵᱟᱹᱱᱩᱜᱼᱟ</span> ᱾ ᱚᱱᱟᱛᱮ <span class="highlighted-text">ᱤᱠᱟᱹᱧ ᱠᱷᱚᱡᱚᱜ ᱠᱟᱱᱟ</span> 🙏 ᱾ </br> <span class="highlighted-text">ᱮᱴᱟᱜᱟᱜ ᱟᱹᱲᱟ</span> ᱥᱮᱫᱽᱨᱟᱭᱻᱢᱮ ᱾ ᱱᱚᱸᱰᱮ ᱫᱚ <span class="highlighted-text">ᱵᱟᱱᱟᱨ ᱯᱟᱹᱨᱥᱤᱛᱮ ᱥᱮᱫᱽᱨᱟ ᱜᱟᱱᱚᱜᱼᱟ</span>, ᱢᱮᱱ ᱫᱚ <span class="highlighted-text">ᱥᱟᱱᱛᱟᱲᱛᱮ ᱦᱚᱸ ᱟᱨ ᱤᱝᱞᱤᱥᱛᱮ ᱦᱚᱸ</span> ᱾
       </div>
     `;
