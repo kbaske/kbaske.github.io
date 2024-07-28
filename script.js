@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const dictionaryDiv = document.getElementById('dictionary');
   
-    fetch('https://raw.githubusercontent.com/kbaske/dictionary/main/sat-en.json') // Update with your raw JSON URL
+    fetch('https://raw.githubusercontent.com/kbaske/kbaske.github.io/main/data/sat-en.json') // Update with your raw JSON URL
       .then(response => response.json())
       .then(data => {
         const dictionary = data;
