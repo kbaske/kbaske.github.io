@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(error => console.error('Error fetching the dictionary data:', error));
 
   function displayDictionary() {
+    // *** Shuffle the dictionaryData ***
+    shuffleArray(dictionaryData); // <--- New line to shuffle data
     const wordLimit = getWordLimit();
     const displayData = dictionaryData.slice(0, wordLimit);
     dictionaryDiv.innerHTML = '';
@@ -44,6 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'block';
       });
     });
+  }
+
+  // *** New function to shuffle an array ***
+  function shuffleArray(array) { // <--- New function to shuffle the array
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
   }
 
   function getWordLimit() {
