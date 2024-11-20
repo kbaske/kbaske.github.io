@@ -11,7 +11,6 @@
   /* General Styles */
   body {
     margin: 0;
-    padding-right: 0;
     font-family: 'Sohagee', 'Noto Sans Ol Chiki', Verdana, Geneva, Tahoma, sans-serif;
     background: linear-gradient(to right, #5372F0, #db3c81);
     color: #f3f3f3;
@@ -130,7 +129,6 @@
     width: 100%;
     position: relative;
     background-color: #3e4ab1;
-    padding-right: 0;
   }
   
   .menu-toggle {
@@ -285,6 +283,4 @@ footer {
   .langsel {
     position: absolute;
     right: 0;
-    margin: 0;
-    padding: 0;
   }
