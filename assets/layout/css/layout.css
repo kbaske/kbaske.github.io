@@ -129,7 +129,7 @@
     width: 100%;
     position: relative;
     background-color: #3e4ab1;
-    padding: 0;
+    padding-right: 0;
   }
   
   .menu-toggle {
@@ -284,10 +284,6 @@ footer {
   .langsel {
     position: absolute;
     right: 0;
-    background-color: #3e4ab1;
-    color: #fff;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    vertical-align: middle;
+    margin: 0;
+    padding: 0;
   }
