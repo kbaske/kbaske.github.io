@@ -283,7 +283,7 @@ footer {
   /* Languages section */
   .langsel {
     position: absolute;
-    right: 2px;
+    right: 0;
     background-color: #3e4ab1;
     color: #fff;
     border: none;
