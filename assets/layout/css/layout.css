@@ -129,6 +129,7 @@
     width: 100%;
     position: relative;
     background-color: #3e4ab1;
+    padding: auto 0 auto auto;
   }
   
   .menu-toggle {
