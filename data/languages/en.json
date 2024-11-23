@@ -3,7 +3,7 @@
   "good_evening": "Good evening! ",
   "week": "Week",
   "home": "Home",
-  "sitename-wt": "Wiktionary",
+  "wiktionary": "Wiktionary",
   "johar": "Hello",
   "greeting": "Hi",
   "file": "File",
@@ -12,5 +12,7 @@
   "tools": "Tools",
   "search": "Search",
   "dictionary": "Dictionary",
-  "folder": "Folder"
+  "folder": "Folder",
+  "mymemory": "Mymemory",
+  "talk-to-speech": "Talk to speech"
 }
