@@ -1,5 +1,9 @@
 {
-    "sitename-wt": "Wiktionary",
-    "johar": "Hello",
-    "greeting": "Hi, "
+  "good_morning": "Good Morning! ",
+  "good_evening": "Good evening! ",
+  "week": "Week",
+  "home": "Home",
+  "sitename-wt": "Wiktionary",
+  "johar": "Hello",
+  "greeting": "Hi"
 }
