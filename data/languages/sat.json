@@ -1,5 +1,22 @@
 {
-    "sitename-wt": "ᱣᱤᱠᱤ ᱟᱹᱲᱟᱹ ᱢᱩᱨᱟᱹᱭ",
-    "johar": "ᱡᱚᱦᱟᱨ",
-    "greeting": "ᱡᱚᱦᱟᱨ ᱜᱮ"
+  "good_morning": "ᱥᱟᱹᱜᱩᱱ ᱥᱮᱛᱟᱜ! ",
+  "good_evening": "ᱥᱟᱹᱜᱩᱱ ᱥᱤᱸᱜᱟᱹᱲ! ",
+  "week": "ᱦᱟᱴ",
+  "home": "ᱚᱲᱟᱜ",
+  "wiktionary": "ᱣᱤᱠᱤ ᱟᱹᱲᱟᱹᱢᱩᱨᱟᱹᱭ",
+  "johar": "ᱡᱚᱦᱟᱨ ",
+  "greeting": "ᱡᱚᱦᱟᱨ ᱜᱮ ",
+  "file": "ᱨᱮᱫ",
+  "contact": "ᱥᱟᱹᱜᱟᱹᱭ ᱞᱮᱯᱮ",
+  "about": "ᱟᱞᱮ ᱵᱟᱵᱚᱛ",
+  "tools": "ᱥᱟᱯᱟᱵ ᱠᱚ",
+  "search": "ᱥᱮᱸᱫᱽᱨᱟ",
+  "dictionary": "ᱟᱹᱲᱟᱹᱢᱩᱨᱟᱹᱭ",
+  "folder": "ᱯᱚᱴᱚᱢ",
+  "mymemory": "ᱤᱧᱟᱜᱼᱩᱭᱦᱟᱹᱨ",
+  "text-to-speech": "ᱚᱞ ᱠᱷᱟᱱ ᱨᱚᱲ",
+  "our": "ᱟᱵᱚᱣᱟᱜ",
+  "your": "ᱟᱯᱮᱭᱟᱜ",
+  "created_by": "ᱥᱤᱨᱡᱚᱱᱟᱠᱟᱼᱟᱭ",
+  "edited_by": "ᱥᱟᱯᱲᱟᱣᱟᱠᱟᱫᱼᱟᱭ"
 }

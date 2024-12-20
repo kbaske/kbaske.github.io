@@ -1,5 +1,22 @@
 {
-    "sitename-wt": "Wiktionary",
-    "johar": "Hello",
-    "greeting": "Hi, "
+  "good_morning": "Good Morning! ",
+  "good_evening": "Good evening! ",
+  "week": "Week",
+  "home": "Home",
+  "wiktionary": "Wiktionary",
+  "johar": "Hello",
+  "greeting": "Hi",
+  "file": "File",
+  "contact": "Contact Us",
+  "about": "About Us",
+  "tools": "Tools",
+  "search": "Search",
+  "dictionary": "Dictionary",
+  "folder": "Folder",
+  "mymemory": "Mymemory",
+  "text-to-speech": "Text to speech",
+  "our": "Our",
+  "your": "Your",
+  "created_by": "Created by",
+  "edited_by": "Edited by"
 }
