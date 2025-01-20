@@ -304,6 +304,7 @@
     ẽ: "ᱮᱸ",
     ẽ: "ᱮᱸ", // not yet implemented everywhere
     ẹ: "ᱮᱹ",
+    ẹ: "ᱮᱹ", // not yet implemented everywhere
     e̱: "ᱮ",
     e̠: "ᱮ",
     e̠̠: "ᱮ", // not yet implemented everywhere
@@ -467,6 +468,9 @@
     ẽ̱ṛẽ̠: "ᱮᱬᱮ",
     ẽ̠ṛẽ̠: "ᱮᱬᱮ", // ᱢᱚᱪᱟᱹᱫ
     // ᱯᱮ ᱪᱤᱠᱤᱭᱟᱱᱛᱮ ᱬ ᱵᱚᱱᱚᱫᱚᱞ ᱨᱮᱭᱟᱜ ᱢᱩᱪᱟᱹᱫ
+
+    // recently added
+    ẽ̠ṛẽ̠: "ᱮᱬᱮ",
     // ᱬ ᱵᱚᱱᱚᱫᱚᱞ ᱨᱮᱭᱟᱜ ᱢᱩᱪᱟᱹᱫ
 
     eae: "ᱮᱭᱟᱭ",
@@ -855,6 +859,7 @@
 
     noṇḍoṅ: "ᱱᱳᱬᱳᱝ",
     ṇḍ: "ᱱᱰ",
+    ṇḍ: "ᱱᱰ",
 
     // variations of o
     o: "ᱳ",
