@@ -1174,6 +1174,7 @@
     "t‘": "ᱫ",
     "t'": "ᱫ",
     t́́: "ᱫ", // not implemented everywhere
+    "t'": "ᱫ", // not implemented everywhere
     t̕a: "ᱫᱼᱟ",
     t́a: "ᱫᱼᱟ",
     "t’a": "ᱫᱼᱟ",
