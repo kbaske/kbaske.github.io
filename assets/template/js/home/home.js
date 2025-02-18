@@ -56,23 +56,31 @@ function startSlider() {
     document.getElementById("quotesSlides").style.transform = `translateX(-${
       slideIndex * 100
     }%)`;
-  }, 3000);
+  }, 7000);
 }
 
 // --- Load Featured Project ---
 async function loadFeaturedProject() {
   try {
     const response = await fetch(featuredProjectUrl);
-    if (!response.ok) throw new Error("Failed to fetch featured project");
+    if (!response.ok) throw new Error("Failed to fetch featured projects");
     const projectArray = await response.json();
-    // Assume the first object is the featured project.
-    const entry = projectArray[0];
-    document.getElementById(
-      "featuredProject"
-    ).innerHTML = `<a href="${entry.link}" target="_blank">
-          <img src="${entry.image}" alt="Featured Project"></a>`;
+
+    const featuredContainer = document.getElementById("featuredProject");
+    featuredContainer.innerHTML = ""; // Clear previous content
+
+    projectArray.forEach((entry) => {
+      const projectItem = document.createElement("div");
+      projectItem.className = "featured-project-item";
+      projectItem.innerHTML = `
+        <a href="${entry.link}" target="_blank">
+          <img src="${entry.image}" alt="Featured Project">
+        </a>
+      `;
+      featuredContainer.appendChild(projectItem);
+    });
   } catch (error) {
-    console.error("Error loading featured project:", error);
+    console.error("Error loading featured projects:", error);
   }
 }
 

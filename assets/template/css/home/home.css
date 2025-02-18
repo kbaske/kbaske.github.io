@@ -132,7 +132,7 @@
   aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px navy;
+  border: navy 1px solid;
 }
 
 /* Desktop: 6 columns */
@@ -151,6 +151,7 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 20px;
+  border-radius: 10px;
 }
 
 .team .team-member {
@@ -160,6 +161,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: navy !important;
   background-color: antiquewhite;
   padding-top: 30px; /* Increase top padding for extra space */
   border-radius: 10px;
