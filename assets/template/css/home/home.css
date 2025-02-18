@@ -80,20 +80,30 @@
 }
 
 /* ===============================
-   Featured Project (3:4)
+   Featured Project Section
 =============================== */
-
-/* --- Featured Projects: 4 Items per Row --- */
+/* Mobile: swipeable slider (1 per view) */
 .featured-project #featuredProject {
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   gap: 10px;
-  text-align: center;
+}
+.featured-project #featuredProject > div {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
 }
 
-.featured-project #featuredProject > div {
-  flex: 1 0 calc(25% - 10px);
-  /* Optionally, add additional styling like padding, background, etc. */
+/* Desktop: 4 items per row */
+@media (min-width: 900px) {
+  .featured-project #featuredProject {
+    overflow-x: visible;
+    flex-wrap: wrap;
+  }
+  .featured-project #featuredProject > div {
+    flex: 1 0 calc(25% - 10px);
+    scroll-snap-align: none;
+  }
 }
 
 .featured-project #featuredProject img {
@@ -105,21 +115,16 @@
 }
 
 /* ===============================
-   Projects Gallery (3:4)
+   All Projects Section
 =============================== */
-/* All Projects: 6 Items per Row */
+/* Mobile: 3 columns */
 .projects .project-gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-
 .projects .project-item {
-  background: #fff;
-  padding: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  text-align: center;
-  flex: 1 0 calc(16.66% - 10px);
+  flex: 1 0 calc(33.33% - 10px);
 }
 
 .projects .project-item img {
@@ -127,25 +132,45 @@
   aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px 2px navy;
+}
+
+/* Desktop: 6 columns */
+@media (min-width: 900px) {
+  .projects .project-item {
+    flex: 1 0 calc(16.66% - 10px);
+  }
 }
 
 /* ===============================
-   Team Members (1:1)
+   Team Members Section
 =============================== */
+/* Mobile: swipeable slider (1 per view) */
 .team .team-members {
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   gap: 20px;
 }
 
 .team .team-member {
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  flex: 1 0 calc(25% - 20px);
+  background-color: antiquewhite;
+  padding-top: 30px; /* Increase top padding for extra space */
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px navy;
 }
+
+.team .team-member h3 {
+  margin: 0;
+  padding: 0;
+}
+
 
 .team .team-member img {
   width: 100%;
@@ -158,13 +183,26 @@
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
 }
 
+/* Desktop: 3 columns */
+@media (min-width: 900px) {
+  .team .team-members {
+    overflow-x: visible;
+    flex-wrap: wrap;
+  }
+  .team .team-member {
+    flex: 1 0 calc(33.33% - 20px);
+    scroll-snap-align: none;
+  }
+}
+
+
 /* ===============================
    Affiliates (1:1)
 =============================== */
 .affiliates .affiliate-logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
   justify-content: center;
   margin: 20px 0;
 }
@@ -175,34 +213,16 @@
   object-fit: contain;
   max-width: 150px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
 }
 
-/* ===============================
-   Responsive Layout
-=============================== */
-@media (min-width: 600px) {
-  /* Projects: 2 columns */
-  .projects .project-item {
-    flex: 1 0 calc(50% - 10px);
-  }
-  /* Team Members: 2 columns */
-  .team .team-member {
-    flex: 1 0 calc(50% - 20px);
-  }
-}
-
+/* Desktop views */
 @media (min-width: 900px) {
-  /* Projects: 3 columns */
-  .projects .project-item {
-    flex: 1 0 calc(33.33% - 10px);
-  }
-  /* Team Members: 3 columns */
-  .team .team-member {
-    flex: 1 0 calc(33.33% - 20px);
-  }
   /* Affiliates: adjust logo size for larger screens */
   .affiliates .affiliate-logo img {
     max-width: 120px;
   }
+}
+
+main {
+  margin: 0 auto 4.9rem auto;
 }
