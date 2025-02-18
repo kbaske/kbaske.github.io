@@ -27,11 +27,17 @@ async function loadQuotes() {
       return;
     }
     quotesArray.forEach((quote) => {
-      // Each quote object should have "image" and "quote" properties.
       const slide = document.createElement("div");
       slide.className = "slide";
-      slide.innerHTML = `<img src="${quote.image}" alt="Quote Image">
-                             <p>${quote.quote}</p>`;
+      // Wrap the quote text with initial and final quotation marks.
+      // Replace \n with <br> for proper line breaks.
+      slide.innerHTML = `
+        <img src="${quote.image}" alt="Quote Image">
+        <div class="quote-overlay">
+          <p class="quote-text">“${quote.quote.replace(/\n/g, "<br>")}”</p>
+          <p class="quote-author">- ${quote.author}</p>
+        </div>
+      `;
       slidesContainer.appendChild(slide);
     });
     startSlider();

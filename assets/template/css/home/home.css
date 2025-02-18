@@ -7,100 +7,202 @@
   padding: 20px;
 }
 
+.date-time {
+  font-size: 18px;
+}
+
 /* ===============================
-   Slider Styles (Quotes Section)
+   Quotes Slider (16:9)
 =============================== */
-.slider {
+.quotes-slider .slider {
   position: relative;
   width: 100%;
   max-width: 800px;
   margin: 20px auto;
+  height: 200px; /* Fixed height */
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px navy;
 }
-.slides {
+
+.quotes-slider .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  height: 100%;
 }
-.slide {
+
+.quotes-slider .slide {
+  position: relative;
   min-width: 100%;
-  box-sizing: border-box;
+  height: 100%;
+}
+
+/* Image: full size with lower opacity */
+.quotes-slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7; /* Lower opacity for overlay effect */
+}
+
+/* Overlay Container for Quote Text */
+.quotes-slider .quote-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertical center */
+  align-items: center;      /* Horizontal center */
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  color: #fff;
 }
-.slide img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
+
+/* Quote Text Styling */
+.quotes-slider .quote-overlay .quote-text {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.4;
+  color: navy;
 }
-/* ===============================
-   Featured Project Section
-=============================== */
-#featuredProject {
+
+/* Author Text Styling: placed on a new line, right aligned */
+.quotes-slider .quote-overlay .quote-author {
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
   text-align: center;
-  margin: 20px 0;
+  margin-left: 200px;
+  color: rgb(12, 100, 54);
 }
-#featuredProject img {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+
 /* ===============================
-   Projects Gallery Section
+   Featured Project (3:4)
 =============================== */
-.project-gallery {
+
+/* --- Featured Projects: 4 Items per Row --- */
+.featured-project #featuredProject {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 20px 0;
+  text-align: center;
 }
-.project-item {
+
+.featured-project #featuredProject > div {
+  flex: 1 0 calc(25% - 10px);
+  /* Optionally, add additional styling like padding, background, etc. */
+}
+
+.featured-project #featuredProject img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* ===============================
+   Projects Gallery (3:4)
+=============================== */
+/* All Projects: 6 Items per Row */
+.projects .project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.projects .project-item {
   background: #fff;
   padding: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  flex: 1 0 21%;
   text-align: center;
+  flex: 1 0 calc(16.66% - 10px);
 }
-.project-item img {
+
+.projects .project-item img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
 }
+
 /* ===============================
-   Team Members Section
+   Team Members (1:1)
 =============================== */
-.team-members {
+.team .team-members {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 20px 0;
 }
-.team-member {
+
+.team .team-member {
   background: #fff;
   padding: 20px;
-  flex: 1 0 21%;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   text-align: center;
+  flex: 1 0 calc(25% - 20px);
 }
-.team-member img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+
+.team .team-member img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  max-width: 100px;
+  border-radius: 50%;
   margin-bottom: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
 }
+
 /* ===============================
-   Affiliates Section
+   Affiliates (1:1)
 =============================== */
-.affiliate-logos {
+.affiliates .affiliate-logos {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   margin: 20px 0;
 }
-.affiliate-logo img {
+
+.affiliates .affiliate-logo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   max-width: 150px;
-  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* ===============================
+   Responsive Layout
+=============================== */
+@media (min-width: 600px) {
+  /* Projects: 2 columns */
+  .projects .project-item {
+    flex: 1 0 calc(50% - 10px);
+  }
+  /* Team Members: 2 columns */
+  .team .team-member {
+    flex: 1 0 calc(50% - 20px);
+  }
+}
+
+@media (min-width: 900px) {
+  /* Projects: 3 columns */
+  .projects .project-item {
+    flex: 1 0 calc(33.33% - 10px);
+  }
+  /* Team Members: 3 columns */
+  .team .team-member {
+    flex: 1 0 calc(33.33% - 20px);
+  }
+  /* Affiliates: adjust logo size for larger screens */
+  .affiliates .affiliate-logo img {
+    max-width: 120px;
+  }
 }
