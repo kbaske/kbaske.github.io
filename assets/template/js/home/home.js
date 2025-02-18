@@ -48,14 +48,20 @@ async function loadQuotes() {
 
 // --- Simple Slider Functionality ---
 let slideIndex = 0;
+// Hybrid auto-slide for Quotes Slider: auto-slide plus manual scrolling allowed.
 function startSlider() {
-  const slides = document.getElementById("quotesSlides").children;
-  if (!slides.length) return;
+  const slider = document.querySelector(".quotes-slider .slider");
+  if (!slider) return;
   setInterval(() => {
-    slideIndex = (slideIndex + 1) % slides.length;
-    document.getElementById("quotesSlides").style.transform = `translateX(-${
-      slideIndex * 100
-    }%)`;
+    let slideWidth = slider.clientWidth;
+    let newScrollLeft = slider.scrollLeft + slideWidth;
+    if (newScrollLeft >= slider.scrollWidth) {
+      newScrollLeft = 0; // Reset to first slide
+    }
+    slider.scrollTo({
+      left: newScrollLeft,
+      behavior: "smooth",
+    });
   }, 7000);
 }
 
@@ -74,7 +80,7 @@ async function loadFeaturedProject() {
       projectItem.className = "featured-project-item";
       projectItem.innerHTML = `
         <a href="${entry.link}" target="_blank">
-          <img src="${entry.image}" alt="Featured Project">
+          <img src="${entry.image}" alt="Spotlight">
         </a>
       `;
       featuredContainer.appendChild(projectItem);
@@ -82,6 +88,23 @@ async function loadFeaturedProject() {
   } catch (error) {
     console.error("Error loading featured projects:", error);
   }
+}
+
+// (Optional) Hybrid auto-slide for Featured Projects on Mobile
+function startFeaturedSlider() {
+  const slider = document.querySelector(".featured-project #featuredProject");
+  if (!slider) return;
+  setInterval(() => {
+    let slideWidth = slider.clientWidth;
+    let newScrollLeft = slider.scrollLeft + slideWidth;
+    if (newScrollLeft >= slider.scrollWidth) {
+      newScrollLeft = 0;
+    }
+    slider.scrollTo({
+      left: newScrollLeft,
+      behavior: "smooth",
+    });
+  }, 7000);
 }
 
 // --- Load Projects ---
@@ -95,7 +118,7 @@ async function loadProjects() {
       const projectItem = document.createElement("div");
       projectItem.className = "project-item";
       projectItem.innerHTML = `<a href="${entry.link}" target="_blank">
-            <img src="${entry.image}" alt="Project"></a>`;
+            <img src="${entry.image}" alt="ᱥᱟᱯᱟᱵ"></a>`;
       gallery.appendChild(projectItem);
     });
   } catch (error) {
