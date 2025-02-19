@@ -48,20 +48,14 @@ async function loadQuotes() {
 
 // --- Simple Slider Functionality ---
 let slideIndex = 0;
-// Hybrid auto-slide for Quotes Slider: auto-slide plus manual scrolling allowed.
 function startSlider() {
-  const slider = document.querySelector(".quotes-slider .slider");
-  if (!slider) return;
+  const slides = document.getElementById("quotesSlides").children;
+  if (!slides.length) return;
   setInterval(() => {
-    let slideWidth = slider.clientWidth;
-    let newScrollLeft = slider.scrollLeft + slideWidth;
-    if (newScrollLeft >= slider.scrollWidth) {
-      newScrollLeft = 0; // Reset to first slide
-    }
-    slider.scrollTo({
-      left: newScrollLeft,
-      behavior: "smooth",
-    });
+    slideIndex = (slideIndex + 1) % slides.length;
+    document.getElementById("quotesSlides").style.transform = `translateX(-${
+      slideIndex * 100
+    }%)`;
   }, 7000);
 }
 
@@ -69,7 +63,7 @@ function startSlider() {
 async function loadFeaturedProject() {
   try {
     const response = await fetch(featuredProjectUrl);
-    if (!response.ok) throw new Error("Failed to fetch featured projects");
+    if (!response.ok) throw new Error("Failed to fetch spotlights");
     const projectArray = await response.json();
 
     const featuredContainer = document.getElementById("featuredProject");
@@ -86,32 +80,15 @@ async function loadFeaturedProject() {
       featuredContainer.appendChild(projectItem);
     });
   } catch (error) {
-    console.error("Error loading featured projects:", error);
+    console.error("Error loading spotlights:", error);
   }
-}
-
-// (Optional) Hybrid auto-slide for Featured Projects on Mobile
-function startFeaturedSlider() {
-  const slider = document.querySelector(".featured-project #featuredProject");
-  if (!slider) return;
-  setInterval(() => {
-    let slideWidth = slider.clientWidth;
-    let newScrollLeft = slider.scrollLeft + slideWidth;
-    if (newScrollLeft >= slider.scrollWidth) {
-      newScrollLeft = 0;
-    }
-    slider.scrollTo({
-      left: newScrollLeft,
-      behavior: "smooth",
-    });
-  }, 7000);
 }
 
 // --- Load Projects ---
 async function loadProjects() {
   try {
     const response = await fetch(projectsUrl);
-    if (!response.ok) throw new Error("Failed to fetch projects");
+    if (!response.ok) throw new Error("Failed to fetch ᱥᱟᱯᱟᱵᱠᱚ");
     const projectsArray = await response.json();
     const gallery = document.getElementById("projectGallery");
     projectsArray.forEach((entry) => {
@@ -122,7 +99,7 @@ async function loadProjects() {
       gallery.appendChild(projectItem);
     });
   } catch (error) {
-    console.error("Error loading projects:", error);
+    console.error("Error loading ᱥᱟᱯᱟᱵᱠᱚ:", error);
   }
 }
 
