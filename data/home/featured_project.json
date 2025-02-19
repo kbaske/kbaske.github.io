@@ -1,22 +1,22 @@
 [
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Santali_map.png/330px-Santali_map.png",
-    "link": "wt/temp"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTI6uxR9y6ygju40reVCS_HYQ-TxeRzn2mxUgFzlLU0YOdvWWECtZT0XFCDX1WMmGq52s&usqp=CAU",
+    "link": "wt/temp",
+    "name": "Form Template - Wiktionary"
   },
   {
-    "image": "https://img.freepik.com/free-psd/3d-rendering-quotes-frame-box-icon-isolated-3d-render-illustration_47987-7827.jpg",
-    "link": "wt/stemp"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfLpVEwWdgl2sCC4eMDi6BvtGQ84Z2CL0kQBUs-1vcSC6SNWg2CmYtbpZaHNeHz-rWZaQ&usqp=CAU",
+    "link": "wt/stemp",
+    "name": "ScientificTemplate - Wiktionary"
   },
   {
-    "image": "https://scontent.fbbi5-1.fna.fbcdn.net/v/t39.30808-6/480449492_1756035671843505_8981968967521329151_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=bs1lldpAragQ7kNvgG1t6Pb&_nc_oc=Adi1hTciiSD7gn_0b5eWvzLgDkfGICDBVZ_H2b_CIW4GoHdvBQClHgPOXb5HodeHBAU&_nc_zt=23&_nc_ht=scontent.fbbi5-1.fna&_nc_gid=AW3U0untslGJ2cgY76IJH0M&oh=00_AYCfApmlsxh5GLVpg_6dJioyZ1jkvgAFRHczqjT-uXiQ4Q&oe=67BA5290",
-    "link": "wt/itemp"
+    "image": "https://static.vecteezy.com/system/resources/previews/042/712/673/non_2x/google-translate-icon-logo-symbol-free-png.png",
+    "link": "wt/dics",
+    "name": "Dictionary / Translation"
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Santali_map.png/330px-Santali_map.png",
-    "link": "wt/dics"
-  },
-  {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Santali_map.png/330px-Santali_map.png",
-    "link": "translitarate"
+    "image": "https://thumbs.dreamstime.com/b/arabic-letter-dhal-latin-transliteration-black-alphabet-red-white-background-184085091.jpg",
+    "link": "translitarate",
+    "name": "Translitarate"
   }
 ]
