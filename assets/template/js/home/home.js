@@ -74,7 +74,7 @@ async function loadFeaturedProject() {
       projectItem.className = "featured-project-item";
       projectItem.innerHTML = `
         <a href="${entry.link}" target="_blank">
-          <img src="${entry.image}" alt="Spotlight">
+          <img src="${entry.image}" alt="${entry.name}">
         </a>
       `;
       featuredContainer.appendChild(projectItem);
@@ -95,7 +95,7 @@ async function loadProjects() {
       const projectItem = document.createElement("div");
       projectItem.className = "project-item";
       projectItem.innerHTML = `<a href="${entry.link}" target="_blank">
-            <img src="${entry.image}" alt="ᱥᱟᱯᱟᱵ"></a>`;
+            <img src="${entry.image}" alt="${entry.name}"></a>`;
       gallery.appendChild(projectItem);
     });
   } catch (error) {
@@ -115,7 +115,7 @@ async function loadTeamMembers() {
       member.className = "team-member";
       member.innerHTML = `<img src="${entry.photo}" alt="${entry.name}">
             <h3>${entry.name}</h3>
-            <p>${entry.position}</p>`;
+            <p>${entry.position.replace(/\n/g, "<br>")}</p>`;
       teamContainer.appendChild(member);
     });
   } catch (error) {
@@ -134,7 +134,7 @@ async function loadAffiliates() {
       const logoDiv = document.createElement("div");
       logoDiv.className = "affiliate-logo";
       logoDiv.innerHTML = `<a href="${entry.link}" target="_blank">
-            <img src="${entry.image}" alt="Affiliate Logo"></a>`;
+            <img src="${entry.image}" alt="${entry.title}"></a>`;
       affiliateContainer.appendChild(logoDiv);
     });
   } catch (error) {
