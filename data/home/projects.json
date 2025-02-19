@@ -31,12 +31,12 @@
   },
   {
     "image": "",
-    "link": "dics.html",
+    "link": "wt",
     "name": ""
   },
   {
     "image": "",
-    "link": "",
+    "link": "dics.html",
     "name": ""
   },
   {
@@ -57,11 +57,6 @@
   {
     "image": "",
     "link": "transliterate/latin",
-    "name": ""
-  },
-  {
-    "image": "",
-    "link": "wt",
     "name": ""
   }
 ]
