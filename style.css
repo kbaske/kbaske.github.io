@@ -112,6 +112,10 @@ footer {
   border-radius: 10px;
 }
 
+.modal .modal-content h2 {
+  text-align: center;
+}
+
 .close {
   color: #aaa;
   float: right;
@@ -151,4 +155,9 @@ footer {
 
 .no-results h1 {
   color: #008cff;
+}
+
+footer .container a {
+  text-decoration: none; 
+  color: inherit;
 }
