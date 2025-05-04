@@ -457,12 +457,12 @@
     }
 
     // Add ᱽ if ग, ज, द, ब at the end of the word
-    if (outputText.length > 0) {
-      const lastChar = outputText.slice(-1);
-      if (add_sub_char.includes(lastChar)) {
-        outputText += "ᱽ";
-      }
-    }
+    // if (outputText.length > 0) {
+    //  const lastChar = outputText.slice(-1);
+    //  if (add_sub_char.includes(lastChar)) {
+    //    outputText += "ᱽ";
+    //  }
+    //}
 
     return outputText;
   }
