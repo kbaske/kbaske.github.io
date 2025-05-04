@@ -438,7 +438,7 @@
   };
 
   const remove_sub_char = ["ᱚ", "ᱟ", "ᱤ", "ᱩ", "ᱮ", "ᱳ"];
-  const add_sub_char = ["ᱜ", "ᱡ", "ᱫ", "ᱵ"];
+  // const add_sub_char = ["ᱜ", "ᱡ", "ᱫ", "ᱵ"];
 
   function transliterate(inputText) {
     let outputText = inputText;
