@@ -1,10 +1,9 @@
 /* Material UI Inspired Theme */
 
-main .container {
+.container {
     max-width: 800px;
     width: 90%; /* Adjust width for responsiveness */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto 7rem auto;
     text-align: center;
     padding: 25px;
     background: #fff;
@@ -13,14 +12,14 @@ main .container {
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
-main h1 {
+h1 {
     font-size: 2rem; /* Larger title */
     font-weight: 500; /* Semi-bold font */
     margin-bottom: 15px;
     color: #1a237e; /* Primary color */
 }
 
-main h2 {
+h2 {
     font-size: 1.5rem; /* Sub title */
     font-weight: 500;
     margin-top: 20px;
@@ -28,12 +27,12 @@ main h2 {
     color: #1a237e; /* Primary color */
 }
 
-main p {
+p {
     margin-bottom: 20px; /* Space under paragraphs */
     color: #555;
 }
 
-main textarea {
+textarea {
     width: 100%;
     height: 120px;
     margin-bottom: 20px;
@@ -46,13 +45,13 @@ main textarea {
     transition: border-color 0.3s ease; /* Smooth border transition */
 }
 
-main textarea:focus {
+textarea:focus {
     border-color: #3f51b5; /* Primary color on focus */
     box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.2); /* Subtle focus shadow */
 }
 
 
-main .button {
+.button {
     padding: 12px 25px;
     font-size: 1rem;
     color: #fff;
@@ -65,19 +64,19 @@ main .button {
 }
 
 
-main .button:hover {
+.button:hover {
     background-color: #283593; /* Darken on hover */
 }
 
 /* Modify .button for full width*/
-main .button[onclick="performTransliteration()"]{
+.button[onclick="performTransliteration()"]{
   width: calc(100% - 10px); /* full width with margin spacing*/
    margin: 5px 5px 15px 5px; /* Spacing with increased bottom margin */
    display: block;
 }
 
 
-main .button-container {
+.button-container {
     display: flex; /* Arrange buttons horizontally */
     justify-content: flex-start; /* Align buttons to the start */
     margin-top: 10px;
@@ -85,29 +84,29 @@ main .button-container {
 }
 
 /* Modified styling for reset and copy buttons*/
-main .button-container .reset-button,
-main .button-container .copy-button {
+.button-container .reset-button,
+.button-container .copy-button {
     width: calc(50% - 10px);
      margin: 5px; /* Spacing between buttons */
     box-sizing: border-box;
 }
 
-main .reset-button{
+.reset-button{
   background-color: #9e9e9e;
 }
-main .reset-button:hover {
+.reset-button:hover {
     background-color: #757575;
 }
 
-main .copy-button{
+.copy-button{
   background-color: #43a047;
 }
 
-main .copy-button:hover{
+.copy-button:hover{
   background-color: #2e7d32;
 }
 
-main #output {
+#output {
     margin-top: 15px;
     padding: 12px 15px;
     font-size: 1.1rem;
@@ -119,30 +118,30 @@ main #output {
      box-sizing: border-box; /* Include padding in width calculation */
 }
 
-main a {
+a {
   text-decoration: none;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 600px) {
-    main .container {
+    .container {
         width: 95%;
         padding: 20px;
     }
-    main h1 {
+    h1 {
       font-size: 1.8rem;
     }
-    main h2{
+    h2{
       font-size: 1.3rem;
     }
-    main p{
+    p{
       font-size: 0.9rem;
     }
-    main textarea, main .button, main #output{
+    textarea, .button, #output{
         font-size: 0.9rem;
     }
-    main .button-container .reset-button,
-    main .button-container .copy-button {
+    .button-container .reset-button,
+    .button-container .copy-button {
       width: calc(100% - 10px);
     }
 }
