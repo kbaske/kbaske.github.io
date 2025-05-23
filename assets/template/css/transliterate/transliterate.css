@@ -2,7 +2,7 @@
 
 .container {
     max-width: 800px;
-    width: 90%; /* Adjust width for responsiveness */
+    /* width: 90%; /* Adjust width for responsiveness */
     margin: 2rem auto 7rem auto;
     text-align: center;
     padding: 2rem;
