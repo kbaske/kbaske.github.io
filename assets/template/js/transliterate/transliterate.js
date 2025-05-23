@@ -2252,6 +2252,56 @@
     "\\-": "ᱼ",
     "\\.": " ᱾",
 
+    // Misclineous goes here...
+    idien: "ᱤᱫᱤᱭᱮᱱ",
+    nhate: "ᱱᱷᱟᱛᱮ",
+    õ̠nõ̠ṛhẽ̠: "ᱚᱱᱚᱬᱦᱮᱸ",
+    "Dr.": "ᱰᱨ.",
+    idiet́: "ᱤᱫᱤᱭᱮᱫ",
+    idiem: "ᱤᱫᱤᱭᱮᱢ",
+    idieda: "ᱤᱫᱤᱭᱮᱫᱟ",
+    diem: "ᱥᱤᱭᱮᱢ",
+    ḍiem: "ᱰᱤᱭᱮᱢ",
+    ḍien: "ᱰᱤᱭᱮᱱ",
+    ḍiet́: "ᱰᱤᱭᱮᱫ",
+    ḍieda: "ᱰᱤᱭᱮᱫᱟ",
+    diet́: "ᱫᱤᱭᱮᱫ",
+    dieda: "ᱫᱤᱭᱮᱫᱟ",
+    Internet: "ᱤᱱᱟᱴᱟᱹᱨᱱᱮᱴ",
+    Co̠et́: "ᱪᱚᱭᱮᱫ",
+    coet́: "ᱪᱳᱭᱮᱫ",
+    coeda: "ᱪᱳᱭᱮᱫᱟ",
+
+    coem: "ᱪᱳᱭᱮᱢ",
+    co̠eda: "ᱪᱚᱭᱮᱫᱟ",
+
+    co̠em: "ᱪᱚᱭᱮᱢ",
+    "Sunshine ": "ᱥᱟᱹᱱᱥᱤᱱ",
+    Quotes: "ᱠᱳᱴᱥ",
+    Quote: "ᱠᱳᱴ",
+
+    Teheń: "ᱛᱮᱹᱦᱮᱹᱧ",
+    "primary ": "ᱯᱟᱨᱟᱭᱢᱟᱨᱤ",
+    School: "ᱥᱠᱩᱞ",
+    High: "ᱦᱟᱭ",
+    "Matric ": "ᱢᱮᱴᱨᱤᱠ ",
+    "Power ": "ᱯᱟᱣᱟᱹᱨ",
+    "House ": "ᱦᱟᱣᱩᱥ",
+    apprentice: "ᱟᱯᱯᱨᱮᱱᱴᱤᱥ",
+    "technical ": "ᱴᱮᱠᱱᱤᱠᱟᱞ",
+    "education ": "ᱮᱡᱩᱠᱮᱥᱟᱹᱱ",
+    training: "ᱴᱨᱮᱱᱤᱝ",
+    "Industrial ": "ᱤᱱᱰᱟᱥᱴᱨᱤᱭᱟᱞ",
+    Head: "ᱦᱮᱰ",
+    "master ": "ᱢᱟᱥᱴᱟᱹᱨ",
+    "Docter ": "ᱰᱳᱠᱴᱟᱹᱨ",
+
+    "literature ": "ᱞᱤᱴᱨᱮᱪᱟᱹᱨ",
+    "Courtesy ": "ᱠᱳᱨᱴᱮᱥᱤ",
+
+    // Miscellaneous end here...
+
+    // ᱜᱮᱞᱵᱟᱨ ᱯᱟᱹᱨᱤᱥ ᱮᱛᱚᱦᱚᱵ
     // ᱜᱮᱞᱵᱟᱨ ᱯᱟᱹᱨᱤᱥ ᱠᱚ
     // ᱦᱟᱸᱥᱫᱟᱜ ᱯᱟᱹᱨᱤᱥ ᱮᱛᱚᱦᱚᱵ
     hansdah: "ᱦᱟᱸᱥᱫᱟᱜ",

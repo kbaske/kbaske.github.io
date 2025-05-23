@@ -875,6 +875,11 @@
     "ंद्रौ": "ᱱᱫᱽᱨᱳᱣ",
     "ंद्रो़": "ᱱᱫᱽᱨᱚ",
     "ंद्रे़": "ᱱᱫᱽᱨᱮ",
+
+    // Miscellaneous goes here...
+    गुजर: "ᱜᱩᱡᱟᱹᱨ",
+
+    // Miscellaneous end here...
   };
 
   const remove_sub_char = ["ᱚ", "ᱟ", "ᱤ", "ᱩ", "ᱮ", "ᱳ"];
