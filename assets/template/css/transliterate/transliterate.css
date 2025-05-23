@@ -2,15 +2,14 @@
 
 body {
     padding: 20px; /* Add padding for content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
 }
 
 main .container {
     max-width: 600px;
     width: 90%; /* Adjust width for responsiveness */
+    margin-left: auto;
+    margin-right: auto;
     padding: 25px;
     background: #fff;
     border-radius: 8px; /* Rounded corners */
