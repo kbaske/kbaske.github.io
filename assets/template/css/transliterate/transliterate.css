@@ -1,5 +1,13 @@
 /* Material UI Inspired Theme */
 
+body {
+    padding: 20px; /* Add padding for content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 main .container {
     max-width: 600px;
     width: 90%; /* Adjust width for responsiveness */
