@@ -2,7 +2,7 @@
 
 .container {
     max-width: 800px;
-    width: 90%; /* Adjust width for responsiveness */
+    width: 100%; /* Adjust width for responsiveness */
     margin: 2rem auto 7rem auto;
     text-align: center;
     padding: 2rem;
@@ -12,14 +12,14 @@
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
-h1 {
+.container h1 {
     font-size: 2rem; /* Larger title */
     font-weight: 500; /* Semi-bold font */
     margin-bottom: 15px;
     color: #1a237e; /* Primary color */
 }
 
-h2 {
+.container h2 {
     font-size: 1.5rem; /* Sub title */
     font-weight: 500;
     margin-top: 20px;
@@ -123,18 +123,18 @@ a {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .container {
         width: 95%;
         padding: 20px;
     }
-    h1 {
+    .container h1 {
       font-size: 1.8rem;
     }
-    h2{
+    .container h2{
       font-size: 1.3rem;
     }
-    p{
+    .container p{
       font-size: 0.9rem;
     }
     textarea, .button, #output{
