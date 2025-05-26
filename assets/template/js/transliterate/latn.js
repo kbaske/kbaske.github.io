@@ -2256,7 +2256,7 @@
     idien: "ᱤᱫᱤᱭᱮᱱ",
     nhate: "ᱱᱷᱟᱛᱮ",
     õ̠nõ̠ṛhẽ̠: "ᱚᱱᱚᱬᱦᱮᱸ",
-    "dr.": "ᱰᱨ.",
+
     idiet́: "ᱤᱫᱤᱭᱮᱫ",
     idiem: "ᱤᱫᱤᱭᱮᱢ",
     idieda: "ᱤᱫᱤᱭᱮᱫᱟ",
@@ -2620,7 +2620,7 @@
     let outputText = inputText;
 
     // Handle specific pair substitutions first
-    // outputText = outputText.replace(/ia/g, "ᱤᱭᱟ");
+    outputText = outputText.replace(/dr./g, "ᱰᱨᱹ");
     // outputText = outputText.replace(/ea/g, "ᱮᱭᱟ");
 
     // outputText = outputText.replace(/oa/g, "ᱳᱣᱟ");
