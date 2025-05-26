@@ -9,7 +9,7 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     text-align: center;
-    font-family: 'Sohagee', 'Noto Sans Ol Chiki', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Sohagee', 'Noto Sans Ol Chiki', Verdana, Geneva, Tahoma, sans-serif; /* font selector */
     color: #1a237e; /* Ensures text is visible */
 }
 
