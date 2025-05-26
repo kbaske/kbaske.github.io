@@ -67,3 +67,6 @@ window.onload = () => {
   loadLanguage("sat"); // Default to ᱥᱟᱱᱛᱟᱲᱤ
 };
 // Languages switching ended...
+
+// Update the year in the footer dynamically
+document.getElementById("year").textContent = new Date().getFullYear();
