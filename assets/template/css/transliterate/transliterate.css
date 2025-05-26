@@ -90,7 +90,7 @@ textarea:focus {
 }
 
 /* Generate Button Style */
-.button generate-button {
+.button .generate-button {
     background: linear-gradient(to right, #6b82f7, #f06292);
 }
 
