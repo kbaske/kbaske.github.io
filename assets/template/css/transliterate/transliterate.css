@@ -1,147 +1,151 @@
-/* Material UI Inspired Theme */
+/* Enhanced Material UI Inspired Theme - Beautiful & Responsive */
 
 .container {
-    max-width: 800px;
-    width: 100%; /* Adjust width for responsiveness */
-    margin: 2rem auto 7rem auto;
-    text-align: center;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    box-sizing: border-box; /* Include padding in width calculation */
+  max-width: 800px;
+  width: 90%;
+  margin: 2rem auto 7rem auto;
+  text-align: center;
+  padding: 2rem;
+  background: #ffffffcc; /* Slightly transparent white for better blending */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+}
+
+.container h1, .container h2 {
+  color: #f3f3f3;
+  font-family: 'Sohagee', 'Noto Sans Ol Chiki', sans-serif;
 }
 
 .container h1 {
-    font-size: 2rem; /* Larger title */
-    font-weight: 500; /* Semi-bold font */
-    margin-bottom: 15px;
-    color: #1a237e; /* Primary color */
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .container h2 {
-    font-size: 1.5rem; /* Sub title */
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #1a237e; /* Primary color */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
 }
 
 .container p {
-    margin-bottom: 20px; /* Space under paragraphs */
-    color: #555;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 textarea {
-    width: 100%;
-    height: 120px;
-    margin-bottom: 20px;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Include padding in width calculation */
-    outline: none; /* Remove default focus outline */
-    transition: border-color 0.3s ease; /* Smooth border transition */
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #6b82f7;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  font-family: 'Sohagee', 'Noto Sans Ol Chiki', sans-serif;
+  background: #f3f3f3;
+  color: #2b2b2c;
 }
 
 textarea:focus {
-    border-color: #3f51b5; /* Primary color on focus */
-    box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.2); /* Subtle focus shadow */
+  border-color: #db3c81;
+  box-shadow: 0 0 0 3px rgba(219, 60, 129, 0.3);
+  outline: none;
 }
-
 
 .button {
-    padding: 12px 25px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #3f51b5; /* Primary color */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth color transition */
-     margin: 5px; /* Spacing between buttons */
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3e4ab1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+  font-family: 'Sohagee', sans-serif;
 }
-
 
 .button:hover {
-    background-color: #283593; /* Darken on hover */
+  background-color: #6b82f7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Modify .button for full width*/
-.button[onclick="performTransliteration()"]{
-  width: calc(100% - 10px); /* full width with margin spacing*/
-   margin: 5px 5px 15px 5px; /* Spacing with increased bottom margin */
-   display: block;
+.button[onclick="performTransliteration()"] {
+  width: 100%;
+  margin: 5px 0 15px 0;
+  display: block;
 }
-
 
 .button-container {
-    display: flex; /* Arrange buttons horizontally */
-    justify-content: flex-start; /* Align buttons to the start */
-    margin-top: 10px;
-    flex-wrap: wrap; /* Wrap buttons to new lines for smaller screens */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 10px;
 }
 
-/* Modified styling for reset and copy buttons*/
-.button-container .reset-button,
-.button-container .copy-button {
-    width: calc(50% - 10px);
-     margin: 5px; /* Spacing between buttons */
-    box-sizing: border-box;
-}
-
-.reset-button{
+.reset-button {
   background-color: #9e9e9e;
 }
+
 .reset-button:hover {
-    background-color: #757575;
+  background-color: #757575;
 }
 
-.copy-button{
+.copy-button {
   background-color: #43a047;
 }
 
-.copy-button:hover{
+.copy-button:hover {
   background-color: #2e7d32;
 }
 
+.button-container .reset-button,
+.button-container .copy-button {
+  flex: 1;
+  min-width: 45%;
+}
+
 #output {
-    margin-top: 15px;
-    padding: 12px 15px;
-    font-size: 1.1rem;
-    color: #444;
-    background: #f5f5f5; /* Light gray background for output */
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    white-space: pre-wrap; /* Preserve line breaks */
-     box-sizing: border-box; /* Include padding in width calculation */
+  margin-top: 15px;
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  color: #2b2b2c;
+  background: #f3f3f3;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  white-space: pre-wrap;
+  text-align: left;
+  font-family: 'Sohagee', 'Noto Sans Ol Chiki', sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
 
-/* Responsive Adjustments */
-@media (max-width: 767px) {
-    .container {
-        width: 95%;
-        padding: 20px;
-    }
-    .container h1 {
-      font-size: 1.8rem;
-    }
-    .container h2{
-      font-size: 1.3rem;
-    }
-    .container p{
-      font-size: 0.9rem;
-    }
-    textarea, .button, #output{
-        font-size: 0.9rem;
-    }
-    .button-container .reset-button,
-    .button-container .copy-button {
-      width: calc(100% - 10px);
-    }
+  .button-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button-container .reset-button,
+  .button-container .copy-button {
+    width: 100%;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+
+  textarea {
+    height: 100px;
+  }
 }
