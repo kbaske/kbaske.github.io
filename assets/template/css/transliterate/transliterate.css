@@ -27,7 +27,7 @@
     color: #1a237e; /* Primary color */
 }
 
-p {
+.container p {
     margin-bottom: 20px; /* Space under paragraphs */
     color: #555;
 }
