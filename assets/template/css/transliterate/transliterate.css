@@ -61,6 +61,7 @@ textarea:focus {
 .button {
     padding: 12px 25px;
     font-size: 1rem;
+    font-family: inherit;
     color: #fff;
     background: #1a237e;
     border: none;
