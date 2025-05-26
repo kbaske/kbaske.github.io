@@ -2644,6 +2644,16 @@
       outputText = outputText.replace(new RegExp(`ᱽ${char}`, "g"), char);
     }
 
+    // Count occurrences of "᱾"
+    const countSeparator = (str, sep) =>
+      (str.match(new RegExp(sep, "g")) || []).length;
+    const count = countSeparator(outputText, "᱾");
+
+    // If count >= 2, append "ᱹ" repeated count times
+    if (count >= 2) {
+      outputText += "ᱹ".repeat(count);
+    }
+
     return outputText;
   }
 
