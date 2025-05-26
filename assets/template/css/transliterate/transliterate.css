@@ -62,7 +62,7 @@ textarea:focus {
     padding: 12px 25px;
     font-size: 1rem;
     color: #fff;
-    background: linear-gradient(to right, #6b82f7, #f06292);
+    background: #3f51b5; /* Primary color */
     border: none;
     border-radius: 8px;
     cursor: pointer;
