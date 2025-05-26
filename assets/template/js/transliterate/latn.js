@@ -2652,7 +2652,7 @@
     // If count >= 2, append "ᱹ" repeated count times
     if (count >= 2) {
       // Replace all occurrences of ᱾ with ᱹ
-      outputText = outputText.replace(/᱾/g, "ᱹ");
+      outputText = outputText.replace(/ ᱾/g, "ᱹ");
     }
 
     return outputText;

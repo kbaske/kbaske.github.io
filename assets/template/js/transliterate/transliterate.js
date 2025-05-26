@@ -2258,7 +2258,7 @@
     idien: "ᱤᱫᱤᱭᱮᱱ",
     nhate: "ᱱᱷᱟᱛᱮ",
     õ̠nõ̠ṛhẽ̠: "ᱚᱱᱚᱬᱦᱮᱸ",
-    "dr.": "ᱰᱨ.",
+
     idiet́: "ᱤᱫᱤᱭᱮᱫ",
     idiem: "ᱤᱫᱤᱭᱮᱢ",
     idieda: "ᱤᱫᱤᱭᱮᱫᱟ",
@@ -3507,9 +3507,9 @@
     let outputText = inputText;
 
     // Handle specific pair substitutions first
+    outputText = outputText.replace(/dr./g, "ᱰᱨᱹ");
     // outputText = outputText.replace(/ia/g, "ᱤᱭᱟ");
     // outputText = outputText.replace(/ea/g, "ᱮᱭᱟ");
-
     // outputText = outputText.replace(/oa/g, "ᱳᱣᱟ");
     // outputText = outputText.replace(/o̠a/g, "ᱚᱣᱟ");
     // outputText = outputText.replace(/o̱a/g, "ᱚᱣᱟ");
@@ -3529,6 +3529,17 @@
     // Remove ᱽ before specific characters
     for (const char of remove_sub_char) {
       outputText = outputText.replace(new RegExp(`ᱽ${char}`, "g"), char);
+    }
+
+    // Count occurrences of "᱾"
+    const countSeparator = (str, sep) =>
+      (str.match(new RegExp(sep, "g")) || []).length;
+    const count = countSeparator(outputText, "᱾");
+
+    // If count >= 2, append "ᱹ" repeated count times
+    if (count >= 2) {
+      // Replace all occurrences of ᱾ with ᱹ
+      outputText = outputText.replace(/ ᱾/g, "ᱹ");
     }
 
     return outputText;
