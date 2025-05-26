@@ -1,151 +1,146 @@
-/* Enhanced Material UI Inspired Theme - Beautiful & Responsive */
-
+/* Form Container with vibrant and responsive design */
 .container {
-  max-width: 800px;
-  width: 90%;
-  margin: 2rem auto 7rem auto;
-  text-align: center;
-  padding: 2rem;
-  background: #ffffffcc; /* Slightly transparent white for better blending */
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  backdrop-filter: blur(8px);
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto 7rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Sohagee', 'Noto Sans Ol Chiki', Verdana, Geneva, Tahoma, sans-serif;
+    color: #1a237e; /* Ensures text is visible */
 }
 
+/* Titles */
 .container h1, .container h2 {
-  color: #f3f3f3;
-  font-family: 'Sohagee', 'Noto Sans Ol Chiki', sans-serif;
+    margin-bottom: 15px;
 }
 
 .container h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 15px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .container h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 20px 0 10px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left; /* Align h2 to left */
 }
 
+/* Paragraph Text */
 .container p {
-  margin-bottom: 20px;
-  color: #e0e0e0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
+/* Styled Textarea */
 textarea {
-  width: 100%;
-  height: 120px;
-  margin-bottom: 20px;
-  padding: 10px 15px;
-  font-size: 1rem;
-  border: 2px solid #6b82f7;
-  border-radius: 8px;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-  font-family: 'Sohagee', 'Noto Sans Ol Chiki', sans-serif;
-  background: #f3f3f3;
-  color: #2b2b2c;
+    width: 100%;
+    height: 130px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    resize: vertical;
 }
 
 textarea:focus {
-  border-color: #db3c81;
-  box-shadow: 0 0 0 3px rgba(219, 60, 129, 0.3);
-  outline: none;
+    border-color: #5372F0;
+    box-shadow: 0 0 0 3px rgba(83, 114, 240, 0.3);
 }
 
+/* Primary Button Style */
 .button {
-  padding: 12px 25px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #3e4ab1;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin: 5px;
-  font-family: 'Sohagee', sans-serif;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(to right, #5372F0, #db3c81);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
 }
 
 .button:hover {
-  background-color: #6b82f7;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #6b82f7, #f06292);
+    transform: scale(1.03);
 }
 
+/* Perform Button - Full Width */
 .button[onclick="performTransliteration()"] {
-  width: 100%;
-  margin: 5px 0 15px 0;
-  display: block;
+    width: calc(100% - 10px);
+    margin: 10px 5px 20px 5px;
+    display: block;
 }
 
+/* Button Container with Flex */
 .button-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 10px;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
+/* Reset and Copy Buttons */
+.button-container .reset-button,
+.button-container .copy-button {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+/* Reset Button Style */
 .reset-button {
-  background-color: #9e9e9e;
+    background-color: #757575;
 }
 
 .reset-button:hover {
-  background-color: #757575;
+    background-color: #5c5c5c;
 }
 
+/* Copy Button Style */
 .copy-button {
-  background-color: #43a047;
+    background-color: #43a047;
 }
 
 .copy-button:hover {
-  background-color: #2e7d32;
+    background-color: #2e7d32;
 }
 
-.button-container .reset-button,
-.button-container .copy-button {
-  flex: 1;
-  min-width: 45%;
-}
-
+/* Output Box */
 #output {
-  margin-top: 15px;
-  padding: 12px 15px;
-  font-size: 1.1rem;
-  color: #2b2b2c;
-  background: #f3f3f3;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  white-space: pre-wrap;
-  text-align: left;
-  font-family: 'Sohagee', 'Noto Sans Ol Chiki', sans-serif;
+    margin-top: 20px;
+    padding: 14px 18px;
+    font-size: 1.1rem;
+    color: #222;
+    background: #f0f4ff;
+    border-left: 4px solid #3f51b5;
+    border-radius: 6px;
+    word-wrap: break-word;
+    text-align: left;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+    .container {
+        padding: 1.5rem;
+    }
 
-  .button-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-  .button-container .reset-button,
-  .button-container .copy-button {
-    width: 100%;
-  }
-
-  .button {
-    font-size: 1rem;
-  }
-
-  textarea {
-    height: 100px;
-  }
+    .button-container .reset-button,
+    .button-container .copy-button {
+        width: 100%;
+    }
 }
