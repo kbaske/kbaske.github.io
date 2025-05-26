@@ -62,7 +62,6 @@ textarea:focus {
     padding: 12px 25px;
     font-size: 1rem;
     color: #fff;
-    background: linear-gradient(to right, #5372F0, #db3c81);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -88,6 +87,11 @@ textarea:focus {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+}
+
+/* Generate Button Style */
+.button generate-button {
+    background: linear-gradient(to right, #6b82f7, #f06292);
 }
 
 /* Reset and Copy Buttons */
