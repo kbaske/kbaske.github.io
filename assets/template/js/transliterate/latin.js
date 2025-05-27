@@ -60,9 +60,11 @@
 
   const remove_sub_char = ["ᱚ", "ᱟ", "ᱤ", "ᱩ", "ᱮ", "ᱳ"];
 
-  function transliterate(inputText) {
-    inputText = inputText.toLowerCase();
-    let outputText = inputText;
+  // Function to convert input text to output text while preserving spaces and line breaks
+  function transliterate(inputText, substitutions, remove_sub_char) {
+    // Convert input to lowercase to maintain consistency
+    let originalText = inputText;
+    let outputText = inputText.toLowerCase();
 
     // Handle specific pair substitutions first
     outputText = outputText.replace(/mr./g, "ᱢᱨᱹ");
@@ -94,7 +96,20 @@
       outputText = outputText.replace(/ ᱾/g, "ᱹ");
     }
 
-    return outputText;
+    // Preserve original spaces and line breaks
+    let finalOutput = "";
+    let index = 0;
+    for (let i = 0; i < originalText.length; i++) {
+      const char = originalText[i];
+      if (char === " " || char === "\n") {
+        finalOutput += char;
+      } else {
+        finalOutput += outputText[index];
+        index++;
+      }
+    }
+
+    return finalOutput;
   }
 
   window.performTransliteration = function () {
