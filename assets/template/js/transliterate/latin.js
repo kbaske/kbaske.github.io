@@ -60,8 +60,7 @@
 
   const remove_sub_char = ["ᱚ", "ᱟ", "ᱤ", "ᱩ", "ᱮ", "ᱳ"];
 
-  // Function to convert input text to output text while preserving spaces and line breaks
-  function transliterate(inputText, substitutions, remove_sub_char) {
+  function transliterate(inputText) {
     // Convert input to lowercase to maintain consistency
     inputText = inputText.toLowerCase();
     let outputText = inputText;
@@ -94,18 +93,6 @@
     if (count >= 2) {
       // Replace all occurrences of ᱾ with ᱹ
       outputText = outputText.replace(/ ᱾/g, "ᱹ");
-    }
-
-    // Preserve original spaces and line breaks
-    let index = 0;
-    for (let i = 0; i < inputText.length; i++) {
-      const char = inputText[i];
-      if (char === " " || char === "\n") {
-        outputText += char;
-      } else {
-        outputText += outputText[index];
-        index++;
-      }
     }
 
     return outputText;
