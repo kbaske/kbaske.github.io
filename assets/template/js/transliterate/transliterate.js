@@ -2252,7 +2252,7 @@
     // Punctuations goes here...
     "\\~": "ᱻ",
     "\\-": "ᱼ",
-    "\\.": " ᱾",
+    "\\.": "᱾",
 
     // Misclineous goes here...
     idien: "ᱤᱫᱤᱭᱮᱱ",
