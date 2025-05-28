@@ -84,16 +84,8 @@
       outputText = outputText.replace(new RegExp(`ᱽ${char}`, "g"), char);
     }
 
-    // Count occurrences of "᱾"
-    const countSeparator = (str, sep) =>
-      (str.match(new RegExp(sep, "g")) || []).length;
-    const count = countSeparator(outputText, "᱾");
-
-    // If count >= 2, append "ᱹ" repeated count times
-    if (count >= 2) {
-      // Replace all occurrences of ᱾ with ᱹ
-      outputText = outputText.replace(/ ᱾/g, "ᱹ");
-    }
+    // Replace consecutive ᱾ (2 or more) with same number of ᱹ
+outputText = outputText.replace(/᱾{2,}/g, match => "ᱹ".repeat(match.length));
 
     return outputText;
   }
