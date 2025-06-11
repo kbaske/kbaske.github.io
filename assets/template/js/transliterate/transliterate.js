@@ -549,6 +549,7 @@
     ạeạe: "ᱟᱹᱭᱟᱹᱭ",
     aoae: "ᱟᱣᱟᱭ",
     aoiạ: "ᱟᱣᱤᱭᱟᱹ",
+    aera: "ᱟᱭᱨᱟ",
     aeo: "ᱟᱭᱳ",
     aeo̱: "ᱟᱭᱚ",
     aeo̠: "ᱟᱭᱚ",
@@ -1031,6 +1032,7 @@
     // ᱯᱮ ᱪᱤᱠᱤᱭᱟᱱᱛᱮ ᱬ ᱵᱚᱱᱚᱫᱚᱞ ᱨᱮᱭᱟᱜ ᱢᱩᱪᱟᱹᱫ
 
     // recently added
+    era: "ᱮᱨᱟ",
     ẽ̠ṛẽ̠: "ᱮᱬᱮ",
     // ᱬ ᱵᱚᱱᱚᱫᱚᱞ ᱨᱮᱭᱟᱜ ᱢᱩᱪᱟᱹᱫ
 
@@ -2344,6 +2346,10 @@
     international: "ᱤᱱᱴᱟᱹᱨᱱᱮᱥᱱᱟᱹᱞ",
     inter: "ᱤᱱᱴᱟᱹᱨ",
     state: "ᱥᱴᱮᱴ",
+    ãeo̠: "ᱟᱸᱭᱚ",
+    ãw: "ᱟᱶ",
+    ãeõ̠: "ᱟᱸᱭᱚᱸ",
+    ãv: "ᱟᱶ",
 
     // Miscellaneous end here...
 
@@ -3535,7 +3541,9 @@
     }
 
     // Replace consecutive ᱾ (2 or more) with same number of ᱹ
-outputText = outputText.replace(/᱾{2,}/g, match => "ᱹ".repeat(match.length));
+    outputText = outputText.replace(/᱾{2,}/g, (match) =>
+      "ᱹ".repeat(match.length)
+    );
 
     return outputText;
   }
