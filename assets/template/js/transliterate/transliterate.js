@@ -3513,10 +3513,10 @@
     let outputText = inputText;
 
     // Handle specific pair substitutions first
-    outputText = outputText.replace(/dr./g, "ᱰᱨᱹ");
-    outputText = outputText.replace(/mr./g, "ᱢᱨᱹ");
-    outputText = outputText.replace(/mrs./g, "ᱢᱨᱥᱹ");
-    outputText = outputText.replace(/er./g, "ᱤᱨᱹ");
+    // outputText = outputText.replace(/dr./g, "ᱰᱨᱹ");
+    // outputText = outputText.replace(/mr./g, "ᱢᱨᱹ");
+    // outputText = outputText.replace(/mrs./g, "ᱢᱨᱥᱹ");
+    // outputText = outputText.replace(/er./g, "ᱤᱨᱹ");
     // outputText = outputText.replace(/ia/g, "ᱤᱭᱟ");
     // outputText = outputText.replace(/ea/g, "ᱮᱭᱟ");
     // outputText = outputText.replace(/oa/g, "ᱳᱣᱟ");
