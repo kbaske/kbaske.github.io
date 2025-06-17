@@ -94,7 +94,7 @@ textarea:focus {
 /* Reset and Copy Buttons */
 .button-container .reset-button,
 .button-container .copy-button {
-    width: calc(100% - 10px);
+    width: 100% /* calc(100% - 10px) */;
     box-sizing: border-box;
 }
 
