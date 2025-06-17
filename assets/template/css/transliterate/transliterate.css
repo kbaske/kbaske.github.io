@@ -58,7 +58,7 @@ textarea:focus {
 }
 
 /* Primary Button Style */
-.container .button {
+.button {
     padding: 12px 25px;
     font-size: 1rem;
     font-family: inherit;
@@ -71,7 +71,7 @@ textarea:focus {
     margin: 5px;
 }
 
-.container .button:hover {
+.button:hover {
     background: linear-gradient(to right, #6b82f7, #f06292);
     transform: scale(1.03);
 }
