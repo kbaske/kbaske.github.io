@@ -7,27 +7,15 @@ const exceptions = {
   // add more here...
   // Six letters combinations...
   ᱵᱮᱵᱷᱟᱨ: "be̠bhar",
+  ᱵᱮᱣᱦᱟᱨ: "be̠ohar",
   // Five letters combinations...
-  ᱟᱣᱤᱭᱟ: "aoia",
+  //"ᱟᱣᱤᱭᱟ": "aoia",
   // Four letters combinations...
-  ᱮᱭᱟᱭ: "eae",
-  ᱡᱤᱭᱳ: "Jio",
+  //"ᱡᱤᱭᱳ": "Jio",
   // Three letters combinations...
-  ᱟᱭᱮ: "ae",
-  ᱤᱭᱟ: "ia",
-  ᱚᱭᱮ: "o̠e",
-  ᱳᱭᱮ: "oe",
-  ᱟᱹᱭᱮ: "ạe",
-  ᱵᱮᱣ: "be̠o",
+  //"ᱟᱭᱮ": "ae",
   // Two letters combinations...
-  ᱟᱣ: "ao",
-  ᱟᱶ: "ão",
-  ᱟᱭ: "ae",
-  ᱮᱣ: "eo",
-  ᱟᱹᱣ: "ạo",
-  ᱚᱭ: "o̠e",
-  ᱳᱭ: "oe",
-  //"": "",
+  //"ᱟᱣ": "ao", //"": "",
   // One letters combinations...
   ᱮᱹ: "e", //, "": "",
 };
@@ -65,7 +53,7 @@ const DEFAULT_MAP = {
   ᱲ: "ṛ",
   ᱴ: "ṭ",
   ᱵ: "b",
-  ᱶ: "v",
+  ᱶ: "̃o",
   ᱷ: "h",
 
   // Common two-character aspirates (consonant + ᱷ)
@@ -149,6 +137,25 @@ function transliterate(text, map) {
   return out;
 }
 
+// 🔹 Special Y/W vowel adjustment
+function adjustYWVowels(s) {
+  return s
+    .replace(/([aạãạ̃eẽẽ̠ēiĩoõõ̠o̠ōuũạãa.̃ẽēe̱ẽ̱ĩõo̱õ̱ōũ])([yw])/gi, (m, v, w) => {
+      if (w.toLowerCase() === "y") return v + "e";
+      if (w.toLowerCase() === "w") return v + "o";
+      return m;
+    })
+    .replace(/([yw])([aạãạ̃eẽẽ̠ēiĩoõõ̠o̠ōuũạãa.̃ẽēe̱ẽ̱ĩõo̱õ̱ōũ])/gi, (m, w, v) => {
+      if (w.toLowerCase() === "y") return "e" + v;
+      if (w.toLowerCase() === "w") return "o" + v;
+      return m;
+    })
+    .replace(/ee/gi, "e")
+    .replace(/oo/gi, "o")
+    .replace(/ie/gi, "i")
+    .replace(/ei/gi, "i");
+}
+
 function normalizeSpaces(s) {
   // Collapse multiple spaces, keep newlines; trim edges per line
   return s
@@ -184,6 +191,10 @@ $mapJson.textContent = `We are Santals.in — a community-driven platform dedica
 
 function convertNow() {
   let text = transliterate($in.value, currentMap);
+
+  // 🔹 Apply Y/W vowel rule
+  text = adjustYWVowels(text);
+
   if ($trim.checked) text = normalizeSpaces(text);
   // lowercase whole text first to ensure stable capitalization result
   text = text.replace(/[A-Z]/g, (ch) => ch.toLowerCase());
