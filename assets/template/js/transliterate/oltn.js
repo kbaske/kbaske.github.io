@@ -24,7 +24,10 @@ const exceptions = {
   ᱟᱶ: "ão",
   ᱟᱭ: "ae",
   ᱮᱣ: "eo",
-  ᱟᱹᱣ: "ạo", //"": "",
+  ᱟᱹᱣ: "ạo",
+  ᱚᱭ: "o̠e",
+  ᱳᱭ: "oe",
+  //"": "",
   // One letters combinations...
   ᱮᱹ: "e", //, "": "",
 };
