@@ -23,8 +23,9 @@
     .small { color: var(--muted); font-size: 12px; }
     details { background: #0e1530; border-top: 1px dashed var(--edge); }
     summary { padding: 12px 14px; cursor: pointer; color: var(--muted); }
-    pre { margin:0; padding:12px 14px; font-size: 13px; overflow:auto; }
+    pre { margin:0; padding:12px 14px; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; overflow-wrap: break-word; max-width: 100%;         /* Prevent horizontal overflow */ }
     code { color: #d7e2ff; }
     .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background:#0b122a; border:1px solid var(--edge); padding:2px 6px; border-radius:6px; }
     #output { font-family: "Times New Roman", Times, serif; font-size: 1.2em; }
+
     a {text-decoration: none; color: inherit; font-weight: bold;}
