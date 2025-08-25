@@ -156,7 +156,8 @@ function adjustYWVowels(s) {
     .replace(/oo̠/gi, "o̠")
     .replace(/ie/gi, "i")
     .replace(/ei/gi, "i")
-    .replace(/ẹ/gi, "e");
+    .replace(/ẹ/gi, "e")
+    .replace(/ạe/gi, "ại");
 }
 
 function normalizeSpaces(s) {
