@@ -152,6 +152,8 @@ function adjustYWVowels(s) {
     })
     .replace(/ee/gi, "e")
     .replace(/oo/gi, "o")
+    .replace(/o̠o/gi, "o̠")
+    .replace(/oo̠/gi, "o̠")
     .replace(/ie/gi, "i")
     .replace(/ei/gi, "i");
 }
