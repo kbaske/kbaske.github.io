@@ -17,7 +17,7 @@ const exceptions = {
   // Two letters combinations...
   //"ᱟᱣ": "ao", //"": "",
   // One letters combinations...
-  ᱮᱹ: "e", //, "": "",
+  //, "": "",
 };
 
 // It handles single letters and common two-char aspirates (consonant + ᱷ).
@@ -155,7 +155,8 @@ function adjustYWVowels(s) {
     .replace(/o̠o/gi, "o̠")
     .replace(/oo̠/gi, "o̠")
     .replace(/ie/gi, "i")
-    .replace(/ei/gi, "i");
+    .replace(/ei/gi, "i")
+    .replace(/ẹ/gi, "e");
 }
 
 function normalizeSpaces(s) {
