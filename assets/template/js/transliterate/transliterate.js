@@ -3516,6 +3516,8 @@
     सांतालि: "ᱥᱟᱱᱛᱟᱲᱤ",
     सांताल: "ᱥᱟᱱᱛᱟᱲ",
 
+    // Miscellaneous end here...
+
     // ᱥᱚᱢᱵᱤᱫᱷᱟᱱ ᱨᱤᱱ ᱦᱩᱲᱟᱹᱜ ᱟᱹᱲᱟᱹ ᱠᱚ | Misspelling Words in Constitution of India
     संिवधान: "ᱥᱚᱢᱵᱤᱫᱷᱟᱱ",
     संविधान: "ᱥᱚᱢᱵᱤᱫᱷᱟᱱ",
@@ -3561,7 +3563,7 @@
     "नव र": "ᱱᱚᱵᱷᱮᱢᱵᱚᱨ",
     सिचव: "ᱥᱚᱪᱤᱵᱽ",
 
-    // Miscellaneous end here...
+    // ᱥᱚᱢᱵᱤᱫᱷᱟᱱ ᱨᱤᱱ ᱦᱩᱲᱟᱹᱜ ᱟᱹᱲᱟᱹ ᱠᱚ | Misspelling Words in Constitution of India ended here.
 
     // Devanagri to Ol Chiki transliteration ended here.
   };
